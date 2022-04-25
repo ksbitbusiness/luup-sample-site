@@ -1,5 +1,5 @@
 body {
-    background:black;
+    background: black;
 }
 
 header {
@@ -61,4 +61,75 @@ header.is-scroll #logo svg .st0 {
 
 header.is-scroll nav ul li a {
     color: #000;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: -10;
+    background-image: url(../images/hero.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main:after {
+    display: block;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(13, 22, 21, 0.25);
+    z-index: -9;
+}
+
+main h1 {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-align: center;
+    font-size: 4.5em;
+}
+
+main h1 small {
+    display: block;
+    font-size: 0.5em;
+}
+
+main #scroll {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-align: center;
+}
+
+main #scroll:after {
+    display: block;
+    content: "";
+    width: 1px;
+    height: 60px;
+    background-color: #fff;
+    margin: auto;
 }
