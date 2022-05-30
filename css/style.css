@@ -465,6 +465,13 @@ main #scroll:after {
 body {
   font-family: "Noto Sans JP", Avenir, "Helvetica Neue", Helvetica, Arial, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", 游ゴシック, YuGothic, メイリオ, Meiryo, sans-serif;
 }
+body img {
+  width: 100%;
+}
+body img.h {
+  width: auto;
+  height: 100%;
+}
 body section {
   width: 100vw;
   margin: 0 auto;
@@ -646,6 +653,50 @@ body section#area .area-map .map {
   }
 }
 body section#area .area-map .map img {
-  width: 100%;
   content: var(--show-image);
+}
+body section#interview {
+  background-color: #efefefef;
+}
+body section#interview .row {
+  background: #fff;
+  width: 1000px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body section#interview .row .col.image {
+  width: 40%;
+  line-height: 0;
+}
+body section#interview .row .col.text-area {
+  width: 60%;
+  padding: 0 3em;
+}
+body section#interview .row .col.text-area h5 {
+  font-size: 1.2em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+body section#interview .row .col.text-area p {
+  margin-top: 1em;
+  line-height: 2;
+}
+body section#interview .row:not(:first-child) {
+  margin-top: 3em;
 }
